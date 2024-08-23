@@ -1,0 +1,72 @@
+.container {
+  @apply relative w-full max-w-[64.8125rem] mx-auto mt-7;
+
+  .dashTableWrapper {
+    @apply bg-bgColor font-normal overflow-x-scroll;
+    @apply rounded w-full px-6 py-4 text-sm text-color7;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+
+    .hasError {
+      @apply text-red-600 font-medium text-base py-4 text-center;
+    }
+
+    .notFound {
+      @apply text-gray-500 font-medium text-base py-4 text-center;
+    }
+
+    .goBack {
+      @apply flex gap-x-3 w-fit items-center text-base py-2;
+
+      span {
+        @apply cursor-pointer w-6 h-auto;
+      }
+
+      .result {
+        @apply font-semibold;
+      }
+    }
+
+    table {
+      @apply w-full text-sm text-left;
+
+      thead {
+        @apply text-xs uppercase font-bold;
+      }
+
+      th > div {
+        @apply flex items-center py-[1rem] pl-[0.78rem] font-semibold;
+        @apply w-fit cursor-pointer gap-x-3 whitespace-nowrap;
+
+        svg {
+          @apply w-4 h-4 p-0;
+        }
+
+        svg.active {
+          @apply rotate-180 transition-transform duration-200;
+        }
+
+        svg.inactive {
+          @apply rotate-0 transition-transform duration-200;
+        }
+      }
+    }
+
+    .dashTableRow {
+      @apply border-b border-colorXII hover:text-color1;
+      @apply hover:bg-gray-100 whitespace-nowrap;
+    }
+
+    .dashTableRow:last-child {
+      @apply border-none;
+    }
+
+    .dashTableRow > td {
+      @apply py-[0.98rem] pl-[1.2rem] w-fit font-normal;
+    }
+
+    .optionIcon {
+      @apply w-5 h-5 pl-2 cursor-pointer;
+    }
+  }
+}

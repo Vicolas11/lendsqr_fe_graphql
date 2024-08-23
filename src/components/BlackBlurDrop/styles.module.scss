@@ -1,0 +1,5 @@
+.backDrop {
+  backdrop-filter: blur(1px);
+  @apply fixed lg:hidden left-0 top-0 h-screen;
+  @apply w-full z-20 bg-[rgba(11,16,24,0.87)];
+}

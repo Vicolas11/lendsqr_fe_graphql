@@ -1,0 +1,65 @@
+.dashboardSidebarWrapper {
+  @apply h-[calc(100vh-6.25rem)] overflow-y-scroll bg-white;
+  @apply font-normal text-color7 hidden lg:block pt-7 pb-4;
+  @apply text-base w-[32%] max-w-[17.6875rem];
+  box-shadow: 0px 5px 20px 0px #0000000A;
+
+  img {
+    @apply w-4 h-auto;
+  }
+
+  .dropdownIcon {
+    @apply w-[0.875rem] h-[0.875rem] mt-[0.19rem];
+  }
+
+  .switchOrganisation {
+    @apply flex w-full items-center gap-x-2;
+    @apply text-color1 cursor-pointer;
+
+    .text {
+      @apply flex items-center w-full gap-x-2;
+    }
+  }
+
+  .dashboard {
+    @apply mt-[12%] flex w-full items-center gap-x-2;
+  }
+
+  .customers,
+  .businesses,
+  .settings {
+    @apply flex w-full items-center gap-x-2;
+  }
+
+  .logout {
+    @apply mt-[20%] flex w-full items-center gap-x-2;
+    @apply border-t border-gray-200 py-5;
+  }
+
+  .version {
+    @apply text-xs font-normal pl-[1.875rem] mt-2;
+  }
+}
+
+.dashboardSidebarWrapper ul {
+  li {
+    @apply flex w-full items-center gap-x-3;
+    @apply pl-[1.5rem] pr-5 cursor-pointer hover:bg-gray-100;
+    @apply border-l-[3px] py-[.8rem];
+    @apply hover:border-color9;
+    @apply hover:text-color1;
+  }
+}
+
+.dashboardSidebarWrapper > div {
+  @apply flex w-full items-center gap-x-2;
+  @apply pl-[1.875rem] pr-5 cursor-pointer hover:bg-gray-100;
+  @apply border-l-[3px] border-white py-2;
+  @apply hover:border-color9;
+  @apply hover:text-color1;
+}
+
+.dashboardSidebarWrapper > h3 {
+  @apply font-medium text-xs text-color8 pl-[1.875rem] pr-5;
+  @apply mt-[1.65rem] uppercase mb-[2.15%];
+}

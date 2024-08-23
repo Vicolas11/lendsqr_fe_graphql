@@ -1,0 +1,83 @@
+.container {
+  @apply mx-auto xl:ml-[5.5rem] mt-0 md:mt-[12rem] lg:mt-[8rem] xl:mt-[12rem];
+  @apply w-full max-w-[29.4rem] px-3;
+}
+
+.welcome {
+  @apply text-left;
+}
+
+.welcome h1 {
+  @apply text-[2.5rem] leading-[6rem] text-left;
+  @apply text-color1 font-bold m-0 p-0;
+  letter-spacing: -0.04em;
+}
+
+.welcome p {
+  @apply text-[1.25rem] leading-[1rem] text-left m-0 p-0;
+  @apply font-normal text-[#545F7D] font-[AvenirRegular];
+}
+
+.loginForm {
+  @apply flex flex-col mt-[3rem] xl:mt-[4.1rem] gap-y-6;
+  @apply font-[AvenirRegular];
+}
+
+.emailInputWrapper,
+.passwordInputWrapper {
+  @apply relative w-full h-[3.13rem];
+}
+
+.inputStyle {
+  @apply px-4 w-full h-full;
+  @apply border-2 border-colorX;
+  @apply rounded-[5px] focus:border-2 active:border-2;
+  @apply focus:border-color2;
+  @apply hover:border-gray-300;
+  @apply active:border-color2;
+  @apply focus:outline-color2;
+  @apply active:outline-color2;
+  @apply transition-all duration-300;
+}
+
+.errorInputStyle {
+  @apply px-4 w-full h-full;
+  @apply border-2 rounded-[5px];
+  @apply border-color4;
+  @apply focus:border-color4;
+  @apply active:border-color4;
+  @apply focus:outline-color4;
+  @apply active:outline-color4;
+  @apply transition-all duration-300;
+}
+
+.passwordInputWrapper label {
+  @apply absolute right-4 top-1/2 translate-y-[-50%];
+  @apply font-semibold text-xs text-center;
+  @apply text-color2 cursor-pointer;
+  @apply hover:text-color3;
+}
+
+.errMsg {
+  @apply absolute text-color4 text-sm p-1;
+  @apply top-[2.9rem];
+}
+
+.forgetPassword {
+  @apply font-semibold text-color2 text-[0.75rem] leading-[1.02em];
+  @apply hover:underline-offset-4 hover:underline text-left;
+  @apply hover:text-color3 w-fit;
+  @apply tracking-widest;
+}
+
+.btnWrapper {
+  @apply bg-color2 text-white text-sm mt-2;
+  @apply w-full h-12 rounded-lg;
+  @apply hover:bg-color3 font-semibold;
+  @apply tracking-widest;
+  @apply transition-colors duration-300;
+}
+
+.btnWrapper button {
+  @apply w-full h-full;
+}

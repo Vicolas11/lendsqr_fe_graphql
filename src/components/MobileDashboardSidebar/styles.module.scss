@@ -1,0 +1,85 @@
+.mobileDashboardSidebarWrapper {
+  @apply bg-bgColor lit:w-auto w-[70%] sm:w-[60%] h-screen;
+  @apply font-normal text-color7 lg:hidden block;
+  @apply text-base fixed top-0 left-0 shadow-md z-30;
+
+  .container {
+    @apply block relative w-full h-full overflow-x-hidden pb-2;
+    @apply overflow-y-scroll;
+
+    .close {
+      @apply absolute top-2 md:top-0 right-[-1rem] w-fit;
+
+      .mdCloseIcon {
+        @apply w-6 h-6 md:h-10 text-color1;
+      }
+    }
+
+    img {
+      @apply w-4 h-auto;
+    }
+
+    .dropdownIcon {
+      @apply w-4 h-4 mt-[0.19rem];
+    }
+
+    .logo {
+        @apply w-full max-w-[7rem] h-auto ml-[1.8rem] mt-5 cursor-pointer;
+      }
+
+    .switchOrganisation {
+      @apply mt-[8%] flex w-full items-center gap-x-2;
+      @apply text-color1 cursor-pointer;
+
+      .text {
+        @apply flex items-center w-full gap-x-1;
+
+        img {
+          @apply w-full max-w-[8px] h-auto;
+        }
+      }
+    }
+
+    .dashboard {
+      @apply mt-[10%] flex w-full items-center gap-x-2;
+    }
+
+    .customers,
+    .businesses,
+    .settings {
+      @apply flex w-full items-center gap-x-2;
+    }
+
+    .logout {
+      @apply mt-[10%] flex w-full items-center gap-x-2;
+      @apply border-t border-gray-200 py-5;
+    }
+
+    .version {
+      @apply lowercase font-normal text-xs pl-[1.875rem];
+    }
+  }
+}
+
+.container ul {
+  li {
+    @apply flex w-full items-center gap-x-3;
+    @apply pl-[1.5rem] pr-5 cursor-pointer hover:bg-gray-100;
+    @apply border-l-[3px] py-[.6rem];
+    @apply hover:border-color9;
+    @apply hover:text-color1;
+  }
+}
+
+.container > div {
+  @apply flex w-full items-center gap-x-2;
+  @apply pl-[1.875rem] pr-5 cursor-pointer hover:bg-gray-100;
+  @apply border-l-[3px] border-white py-[.6rem];
+  @apply hover:border-color9;
+  @apply hover:text-color1;
+}
+
+.container > h3 {
+  @apply font-medium text-xs text-color8 pl-[1.875rem] pr-5;
+  @apply mt-[1.65rem] uppercase mb-[3%];
+}

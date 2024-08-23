@@ -1,0 +1,22 @@
+.container {
+  @apply flex justify-center items-center w-full h-screen bg-bgColor;
+
+  .content {
+    @apply text-center text-lg text-color1;
+
+    h1 {
+      @apply font-bold text-3xl;
+    }
+
+    .status {
+      @apply font-medium mb-3;
+    }
+
+    .btnContainer {
+      @apply flex justify-center;
+      button {
+        @apply py-[2px];
+      }
+    }
+  }
+}

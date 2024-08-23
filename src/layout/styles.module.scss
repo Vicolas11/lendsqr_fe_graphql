@@ -1,0 +1,12 @@
+.layout {
+  @apply block h-screen overflow-y-hidden;
+
+  .layoutInnerWrapper {
+    @apply flex;
+
+    .layoutMain {
+      @apply bg-color5 w-full h-[calc(100vh-5rem)] md:h-[calc(100vh-6.25rem)];
+      @apply flex-1 px-4 md:px-8 py-6 overflow-y-scroll;
+    }
+  }
+}

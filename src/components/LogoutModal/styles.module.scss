@@ -1,0 +1,61 @@
+.logoutModal {
+  @apply fixed md:hidden top-[10%] left-1/2 translate-x-[-50%];
+  @apply z-30 bg-color5 w-[90%] rounded-md;
+
+  .modalHeader {
+    @apply flex justify-between py-2 w-full;
+
+    .close {
+      .mdCloseIcon {
+        @apply w-8 h-8 md:h-10 pr-2 text-color1;
+      }
+    }
+
+    .logo {
+      @apply flex justify-center w-full text-center;
+
+      img {
+        @apply w-full max-w-[150px] h-auto;
+      }
+    }
+  }
+
+  .avatar {
+    @apply border-t-color5;
+    @apply flex w-full space-x-4 relative;
+
+    img {
+      @apply w-16 h-16 rounded-full;
+    }
+
+    .profileName {
+      @apply flex flex-col items-start;
+
+      p {
+        @apply font-normal mt-[-.3rem];
+      }
+    }
+  }
+
+  .docs,
+  .bell {
+    .icon {
+      @apply w-5 h-5 md:h-8 p-0;
+    }
+  }
+
+  .docs,
+  .bell,
+  .logout {
+    @apply flex w-full space-x-4 items-center;
+  }
+}
+
+.logoutModal > div {
+  @apply border-t-2 border-gray-300 px-3;
+  @apply text-color7;
+  @apply cursor-pointer font-semibold py-4;
+  @apply hover:text-color1;
+  @apply hover:bg-color6;
+  @apply hover:border-t-color2;
+}

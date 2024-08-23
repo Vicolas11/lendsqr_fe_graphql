@@ -1,0 +1,121 @@
+.dashHeaderWrapper {
+  @apply w-full h-[5rem] md:h-[6.25rem] m-0;
+  @apply bg-bgColor md:gap-x-12 lg:gap-x-0;
+  @apply flex flex-row justify-between px-4 md:px-16 lg:px-8;
+  @apply md:pl-[1.875rem] xl:pr-[3.4rem] py-[2.1875rem];
+  box-shadow: 3px 0px 20px 0px #0000000a;
+
+  .leftWrapper {
+    @apply flex justify-between items-center lg:gap-x-3;
+    @apply w-full lg:w-[60%] xl:w-[56%];
+
+    .logo {
+      @apply hidden lg:block w-0 md:w-[60%] lg:w-[40%];
+      @apply cursor-pointer;
+
+      img {
+        @apply w-full max-w-[9.05rem] h-[1.875rem];
+      }
+    }
+
+    .searchWrapper {
+      @apply relative flex flex-row justify-center items-center;
+      @apply w-full max-w-[25rem] h-[2.5rem];
+
+      .hamburger {
+        @apply inline-flex p-3 rounded lg:hidden text-color2 ml-auto;
+        @apply hover:text-[#3b3f47] outline-none overflow-y-auto;
+        @apply absolute top-1/2 left-0 translate-y-[-50%] z-10;
+
+        .icon {
+          @apply w-8 h-8 md:h-10 p-0;
+        }
+      }
+
+      input {
+        @apply px-4 mr-[-.5rem] border border-[rgba(84,95,125,0.15)];
+        @apply rounded-br-none rounded-tr-none w-full h-full;
+        @apply rounded-bl-lg rounded-tl-lg pl-12 lg:pl-4 text-sm py-2;
+        @apply focus:outline-2 focus:outline-color2;
+        @apply hover:border-color2;
+        @apply placeholder:text-sm placeholder:font-normal;
+        @apply transition-opacity duration-300;
+      }
+
+      div {
+        @apply bg-color2 w-full max-w-[3.5rem] h-full px-4 rounded-br-lg rounded-tr-lg;
+        @apply flex justify-center items-center cursor-pointer hover:bg-color3;
+        @apply transition-opacity duration-300;
+
+        img {
+          @apply w-4 h-auto;
+        }
+      }
+    }
+  }
+
+  .rightWrapper {
+    @apply flex flex-row sm:w-8/12 md:w-1/2 justify-end items-center;
+    @apply ml-2 md:pr-0 text-color1;
+
+    .docs h1 {
+      @apply underline underline-offset-4 font-normal text-base mt-1;
+      @apply hidden sm:block font-roboto cursor-pointer hover:no-underline;
+    }
+
+    .bell {
+      @apply hidden sm:block cursor-pointer max-w-[1.229375] h-[1.42125];
+      @apply hover:rotate-3 transition-transform duration-300 ml-12;
+
+      img {
+        @apply w-full h-full;
+      }
+    }
+
+    .mobileAvatar {
+      @apply flex flex-row sm:hidden justify-evenly items-center;
+      @apply sm:mr-2 space-x-2 cursor-pointer rounded-full;
+
+      img {
+        @apply w-11/12 md:w-full max-w-[3rem] h-auto;
+      }
+    }
+
+    .avatar {
+      @apply hidden sm:flex flex-row justify-evenly items-center;
+      @apply sm:mr-2 ml-3 lg:ml-[1.9rem] gap-x-2 cursor-pointer rounded-full;
+
+      .avatarImg {
+        @apply w-12 h-12 rounded-full;
+      }
+
+      .profileName {
+        @apply sm:flex flex-row justify-evenly items-center;
+        @apply gap-x-2 font-medium text-base ml-1 mt-2 mr-1;
+
+        img {
+          @apply w-[0.5rem] h-auto;
+        }
+      }
+    }
+
+    .desktopLogout {
+      @apply hidden gap-x-2 items-center absolute top-16 right-6 z-50 w-fit;
+      @apply bg-bgColor py-3 px-5 cursor-pointer whitespace-nowrap;
+      @apply rounded-b font-medium text-color1 hover:bg-gray-50;
+      box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+
+      .signoutIcon {
+        @apply w-4 h-auto;
+      }
+    }
+
+    .avatar:hover .desktopLogout {
+      @apply sm:flex;
+    }
+
+    .avatar:hover .dropDownArrowIcon {
+      @apply rotate-180 transition-transform duration-200;
+    }
+  }
+}

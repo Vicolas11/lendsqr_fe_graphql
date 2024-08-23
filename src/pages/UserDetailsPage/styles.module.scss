@@ -1,0 +1,8 @@
+.userdetailsWrapper {
+  @apply w-full max-w-[64.8125rem] bg-color5;
+  @apply text-color1 mx-auto lit:mt-[2%] mt-[3%] md:mt-[3.5%];
+
+  .notFound {
+    @apply text-gray-500 font-medium text-base py-4 text-center;
+  }
+}

@@ -1,0 +1,45 @@
+.paginationWrapper {
+  @apply flex flex-col md:flex-row mt-[4%] md:mt-4 mb-[3%] mx-auto justify-between text-sm;
+  @apply text-color1 gap-y-3 md:gap-y-0 w-full max-w-[64.8125rem] h-[1.875rem];
+
+  .left {
+    @apply flex gap-x-3 w-full items-center;
+    @apply justify-center font-normal text-sm md:justify-start;
+
+    select {
+      @apply focus:outline-none;
+    }
+
+    span {
+      @apply flex justify-center items-center bg-color9;
+      @apply rounded font-medium py-1 pl-5;
+
+      section {
+        @apply border-none outline-none focus:border-none active:border-none;
+      }
+    }
+  }
+
+  .right {
+    @apply flex justify-center md:justify-end gap-x-3 items-center;
+    @apply text-color7 text-base font-normal w-full;
+
+    .nextBtn, .prevBtn {
+      @apply bg-color9 hover:bg-color2 disabled:hover:bg-gray-100;
+      @apply flex items-center rounded cursor-pointer lit:p-1 p-2 disabled:hover:cursor-not-allowed;
+      @apply disabled:bg-slate-300 disabled:cursor-not-allowed;
+
+      img {
+        @apply w-full lit:max-w-4 max-w-[0.410625rem] h-auto;
+      }
+    }
+
+    .btnPaginate {
+      @apply hover:text-color8;
+    }
+
+    .active {
+      @apply text-color1 font-semibold;
+    }
+  }
+}

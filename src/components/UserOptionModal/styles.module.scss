@@ -1,0 +1,29 @@
+.userOptionModal {
+  @apply block absolute lg:h-[8.125rem] lg:min-w-[11.25rem];
+  @apply top-0 right-[-1rem] rounded bg-bgColor;
+  @apply text-color8 font-semibold z-30;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+
+  div {
+    @apply flex flex-col h-full;
+  }
+
+  div > div {
+    @apply flex flex-row gap-x-2 items-center cursor-pointer;
+    @apply hover:bg-gray-100 px-6 py-2;
+  }
+
+  div > div p {
+    @apply m-0 text-sm font-medium;
+  }
+
+  div > div span img {
+    @apply w-4 h-auto;
+  }
+}
+
+.userOptionModal.lastRow {
+  @apply top-[-5rem];
+}
+

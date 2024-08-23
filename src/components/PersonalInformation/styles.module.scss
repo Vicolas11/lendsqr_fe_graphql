@@ -1,0 +1,51 @@
+.personalInfoWrapper {
+  @apply bg-bgColor rounded mt-[3%] px-8 py-1 overflow-x-auto;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+
+  .innerWrapper {
+    @apply flex flex-row flex-wrap w-full justify-start;
+
+    span {
+      @apply whitespace-nowrap w-fit text-left gap-y-6 py-4 mr-12;
+      @apply flex-shrink-0 flex-grow-0 basis-full md:basis-[15%];
+    }
+  }
+
+  .gurantorWrapper {
+    @apply flex flex-col gap-y-3;
+
+    div {
+      @apply flex flex-row flex-wrap w-full justify-start py-4 border-b border-gray-200;
+
+      span {
+        @apply whitespace-nowrap w-fit text-left gap-y-3 py-1 mr-12;
+        @apply flex-shrink-0 flex-grow-0 basis-full md:basis-[15%];
+      }
+    }
+
+    div:last-child {
+      @apply border-none;
+    }
+  }
+}
+
+.personalInfoWrapper > div {
+  @apply w-full text-left border-b border-gray-200 py-4;
+}
+
+.personalInfoWrapper > div:last-child {
+  @apply border-none;
+}
+
+.personalInfoWrapper > div h3 {
+  @apply font-medium text-base mt-[0.80rem];
+}
+
+.personalInfoWrapper > div p {
+  @apply font-normal text-xs uppercase;
+}
+
+.personalInfoWrapper > div h2 {
+  @apply font-medium text-base text-color8;
+}

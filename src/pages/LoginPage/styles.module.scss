@@ -1,0 +1,32 @@
+.container {
+  @apply flex;
+
+  .logo {
+    @apply absolute max-w-32 md:max-w-[10.86rem] h-[2.25rem] top-6 left-4;
+    @apply xl:top-[6.63rem] xl:left-[6.06rem] z-20;
+    @apply cursor-pointer overflow-hidden;
+
+    img {
+      @apply w-full h-full;
+    }
+  }
+
+  .left {
+    @apply hidden lg:flex items-center justify-center mx-auto w-full h-screen flex-1;
+    @apply relative;
+
+    .pabloSiginContainer {
+      @apply max-w-[37.5rem] h-[21.1rem] overflow-hidden;
+      @apply absolute top-[17.56rem] left-[4.18rem];
+
+      img {
+        @apply w-full h-full;
+      }
+    }
+  }
+
+  .right {
+    @apply flex flex-col w-full lg:w-1/2 xl:max-w-[44rem] h-screen;
+    @apply justify-center md:justify-start font-avenir;
+  }
+}

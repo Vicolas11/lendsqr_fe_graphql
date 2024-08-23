@@ -1,0 +1,70 @@
+.filterDropdownWrapper {
+  @apply block absolute top-16 left-[2.9rem] h-[37.5rem] md:min-w-[16.875rem] px-4 py-6;
+  @apply bg-bgColor rounded m-0 z-[100] cursor-default;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+
+  form {
+    @apply flex flex-col mt-[0.25rem] gap-y-[1.1rem] font-semibold;
+    @apply text-color8 text-sm mx-auto;
+  }
+
+  form > div {
+    @apply flex flex-col items-start w-full gap-y-1 normal-case;
+  }
+
+  label {
+    @apply font-medium;
+  }
+
+  .selectWrapper {
+    @apply mx-auto;
+
+    select {
+      @apply w-full max-w-[14.375rem] h-[2.5rem] border border-colorX;
+      @apply rounded-lg py-2 px-4 font-normal bg-transparent;
+      @apply focus:border focus:border-color2 hover:border-color2;
+      @apply focus:outline focus:outline-color2;
+    }
+
+    .first {
+      @apply text-gray-400;
+    }
+  }
+
+  .inputWrapper {
+    @apply mx-auto;
+
+    input {
+      @apply w-full max-w-[14.375rem] h-[2.5rem] border border-colorX;
+      @apply placeholder:font-normal py-2 px-4 rounded-lg font-normal;
+      @apply focus:border focus:border-color2 hover:border-color2;
+      @apply focus:outline focus:outline-color2;
+    }
+  }
+
+  .btnWrapper {
+    @apply flex flex-row items-center justify-start gap-y-0 gap-x-[0.80rem] mt-[0.80rem];
+
+    button {
+      @apply text-sm font-semibold border w-full max-w-[6.125rem] h-[2.5rem];
+      @apply px-4 py-2 rounded-lg disabled:cursor-not-allowed disabled:opacity-40;
+    }
+
+    .resetBtn {
+      @apply text-color8 border-color8;
+      @apply hover:bg-color8 hover:text-bgColor;
+      @apply disabled:hover:bg-transparent disabled:hover:text-color8;
+    }
+
+    .filterBtn {
+      @apply bg-color2 border-color2 text-bgColor;
+      @apply hover:bg-color3 hover:border-color3;
+      @apply disabled:hover:bg-color2;
+    }
+  }
+}
+
+.isFilter {
+  @apply top-[6.5rem];
+}
